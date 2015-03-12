@@ -1,0 +1,352 @@
+body {
+    background-color:#FFFBD0
+}
+
+header {
+    background-color:#27AE60;
+    margin-top:-20px;
+    padding:5px;
+    height:80px;
+    filter:alpha(opacity=90);
+    opacity:.9
+}
+
+label:hover {
+    background-color:#F90
+}
+
+.titlu {
+    font-family:'Helvetica Neue',Helvetica,sans-serif;
+    color:#FFFBD0
+}
+
+.continut {
+    margin-left:
+}
+
+/* Aici e design-ul butonului */
+.tipuri {
+    position:absolute;
+    margin-top:20px
+}
+
+.tipuri a:hover {
+    text-decoration:underline
+}
+
+/* Butoane Masculin si feminin */
+.butoane {
+    margin-left:550px;
+    margin-top:-20px;
+    width:282px;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.butoane a {
+    font-family:'Helvetica Neue',Helvetica,sans-serif;
+    font-size:18px;
+    text-transform:uppercase;
+    color:#FFFBD0;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    text-align: center;
+    line-height: 100px;
+    text-decoration: none;
+}
+
+.butoane a.feminin {
+    background-color: pink;
+}
+
+.butoane a:hover {
+    background-color: #F90;
+}
+
+.butoane a.activ {
+    border: 3px solid rgba(0, 0, 0, .1);
+}
+
+/* Text */
+.selecteaza {
+    padding:12px;
+    position:absoulte;
+    margin-top:-50px;
+    background-color:#C13100;
+    height:60px;
+    z-index:1
+}
+
+.selecteaza h1 {
+    font-family:'Helvetica Neue',Helvetica,sans-serif;
+    font-size:18px;
+    color:#FFFBD0;
+    margin-top:18px
+}
+
+/* Concursuri si clasament */
+.concursuri {
+    height:auto;
+    margin-top:-50px
+}
+
+.main {
+    width:auto;
+    height:800px;
+    position:absolute;
+    margin-left:330px;
+    margin-top:150px
+}
+
+/*  Basic stucture
+=====================*/
+#accordion {
+    margin:50px auto;
+    width:300px
+}
+
+#accordion ul {
+    list-style:none;
+    margin:0;
+    padding:4px
+}
+
+.accordion {
+    display:none
+}
+
+.accordion.activ,.accordion:target {
+    display:block
+}
+
+#accordion ul li a {
+    font-family:'Helvetica Neue',Helvetica,sans-serif;
+    text-decoration:none;
+    display:block;
+    padding:10px
+}
+
+.accordion {
+    padding:4px
+}
+
+/*  Colors
+====================*/
+#accordion ul {
+/*box-shadow*/
+    -webkit-box-shadow:0 4px 10px #BDBDBD;
+    -moz-box-shadow:0 4px 10px #BDBDBD;
+    box-shadow:0 4px 10px #BDBDBD;
+/*border-radius*/
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px
+}
+
+#accordion ul li a {
+    background:#51A5BA;
+    border-bottom:1px solid #E0E0E0;
+/* Grey*/
+    color:#000;
+    text-transform:uppercase
+}
+
+.accordion {
+    background:#AFEAAA;
+    color:#000
+}
+
+.accordion:target {
+    border-top:3px solid orange
+}
+
+#accordion a:hover {
+    background-color:#F90
+}
+
+/*  Orange */
+/*  Cap de tabel
+====================*/
+.flat-table {
+    display:block;
+    font-family:sans-serif;
+    -webkit-font-smoothing:antialiased;
+    font-size:100%;
+    overflow:auto;
+    width:700px
+}
+
+.flat-table th {
+    background-color:#F90;
+    color:#fff;
+    font-weight:400;
+    padding:10px 20px;
+    text-align:center
+}
+
+.flat-table td {
+    background-color:#D8F1D3;
+    color:#6f6f6f;
+    padding:10px 20px
+}
+
+.flat-table td img {
+    -moz-border-radius:50px/50px;
+    -webkit-border-radius:50px 50px;
+    width:75px;
+    height:75px;
+    object-fit:cover
+}
+
+/* caseta din dreapta */
+.right {
+    position:absolute;
+    padding:12px;
+    width:235px;
+    margin-top:-30px;
+    background-color:#C13100;
+    margin-left:1075px;
+    height:60px
+}
+
+.right h1 {
+    font-family:'Helvetica Neue',Helvetica,sans-serif;
+    font-size:18px;
+    color:#FFFBD0;
+    margin-top:18px;
+    margin-left:30px
+}
+
+/* Top Concursuri */
+/* Acordeon clasament*/
+.topconcursuri {
+    position:absolute;
+    height:auto;
+    margin-left:1045px;
+    margin-top:3px
+}
+
+/*  Basic stucture
+=====================*/
+#topaccordion {
+    margin:50px auto;
+    width:300px
+}
+
+#topaccordion ul {
+    list-style:none;
+    margin:0;
+    padding:4px;
+    text-align:center
+}
+
+.topaccordion {
+    display:none
+}
+
+.topaccordion:target {
+    display:block
+}
+
+#topaccordion ul li a {
+    font-family:'Helvetica Neue',Helvetica,sans-serif;
+    text-decoration:none;
+    display:block;
+    padding:10px
+}
+
+.topaccordion {
+    padding:4px
+}
+
+/*  Colors
+====================*/
+#topaccordion ul {
+/*box-shadow*/
+    -webkit-box-shadow:0 4px 10px #BDBDBD;
+    -moz-box-shadow:0 4px 10px #BDBDBD;
+    box-shadow:0 4px 10px #BDBDBD;
+/*border-radius*/
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px
+}
+
+#topaccordion ul li a {
+    background:#51A5BA;
+    border-bottom:1px solid #E0E0E0;
+/* Grey*/
+    color:#000;
+    text-transform:uppercase
+}
+
+.topaccordion {
+    background:#AFEAAA;
+    color:#000
+}
+
+.topaccordion:target {
+    border-top:3px solid orange
+}
+
+#topaccordion a:hover {
+    background-color:#F90
+}
+
+/*  Orange */
+/* Tabel interior  */
+tg {
+    border-collapse:collapse;
+    border-spacing:0
+}
+
+.tg td {
+    font-family:Arial,sans-serif;
+    font-size:16px;
+    padding:5px;
+    border-width:0;
+    overflow:hidden;
+    word-break:normal
+}
+
+.tg th {
+    font-family:Arial,sans-serif;
+    font-size:12px;
+    font-weight:400;
+    padding:5px;
+    border-width:0;
+    overflow:hidden;
+    word-break:normal
+}
+
+.tg .tg-qwzm {
+    font-family:"Courier New",Courier,monospace!important
+}
+
+.tg tr:hover {
+    background-color:#F90
+}
+
+.tg td:hover {
+    background-color:#F90
+}
+
+f
+.imagine {
+    padding:0;
+    -moz-border-radius:50px/50px;
+    -webkit-border-radius:50px 50px;
+    width:60px;
+    height:60px
+}
+
+.imagine img {
+    -moz-border-radius:50px/50px;
+    -webkit-border-radius:50px 50px;
+    width:65px;
+    height:65px
+}
