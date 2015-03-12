@@ -2,7 +2,7 @@
 
 error_reporting(E_ALL);
 
-$sqlDsn = parse_url(getenv('CLEARDB_DATABASE_URL') ?: 'mysql://root:meh@localhost/clasament');
+$sqlDsn = parse_url(getenv('CLEARDB_DATABASE_URL') ?: 'mysql://root:@localhost/clasament_2015');
 if (!isset($sqlDsn['pass'])) {
   $sqlDsn['pass'] = '';
 }
