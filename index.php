@@ -92,7 +92,7 @@ $concursuri = explode(',', $filters['concursuri']);
 		</header>
 	<div class="tipuri">
 		<div class="selecteaza">
-			<h1 align="center"> Selectează una sau mai multe curse </h1>
+			<h1 align="center"> Selectează una sau mai multe curse</h1>
 		</div>
 			<div class="concursuri">
 
