@@ -80,8 +80,18 @@ $concursuri = explode(',', $filters['concursuri']);
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script src="script.js"></script>
     <title>Clasament alergători montani</title>
+	<meta property="fb:admins" content="100001286327621"/>
      </head>
  <body>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 	<div class="continut">
 	<header>
 		<h1 class="titlu" align="center">Clasament alergători montani</h1>
@@ -154,8 +164,12 @@ $concursuri = explode(',', $filters['concursuri']);
 	<div class="main">
 
 			<?php include 'tabel-rezultate.php' ?>
-
+		<div class="comentarii">
+			<div align="center" class="fb-comments" data-href="http://clasament.roberthajnal.ro" data-numposts="10" data-colorscheme="light"></div>
+		</div>
 	</div>
+	
+	
  </body>
 
  </html>
