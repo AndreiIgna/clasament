@@ -124,6 +124,14 @@ $concursuri = explode(',', $filters['concursuri']);
 
 				</ul>
 		</div>
+		<div class="publicitate">
+			<div class="selecteazai">
+				<h1 class="titlu" align="center"> Produsul săptămânii </h1>
+			</div>
+			<div class="reclama">
+			<a href='//event.2parale.ro/events/click?ad_type=banner&aff_code=3bcf24b77&campaign_unique=1f126f6ec&unique=db0860426' target='_blank' rel='nofollow'><img src='//img.2parale.ro/system/paperclip/banner_pictures/pics/163939/original/163939.jpg' alt='Bodosport.ro' title='Bodosport.ro' border='0' /></a>
+			</div>
+		</div>
 	</div>
 
 		</div>
