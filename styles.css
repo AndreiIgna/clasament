@@ -13,12 +13,12 @@ header {
 }
 
 label:hover {
-    background-color:#F90
+    background-color:#F90;
 }
 
 .titlu {
     font-family:'Helvetica Neue',Helvetica,sans-serif;
-    color:#FFFBD0
+    color:#FFFBD0;
 }
 
 .continut {
@@ -34,14 +34,134 @@ label:hover {
 .tipuri a:hover {
     text-decoration:underline
 }
+/* Meniu */ 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+#cssmenu {
+  background: #27AE60;
+  width: 300px;
+  margin-top:-20px;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+#cssmenu ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
+  text-align: center;
+}
+#cssmenu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenu ul li a:hover {
+  color: #F90;
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+#cssmenu ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+#cssmenu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #F90;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .50s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #ffffff;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+    display: block;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  #cssmenu ul li.last > a,
+  #cssmenu ul li:last-child > a {
+    border: 0;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    display: none;
+  }
+}
 
 /* Butoane Masculin si feminin */
 .butoane {
-    margin-left:550px;
-    margin-top:-20px;
+    margin-left:560px;
     width:282px;
     height: 100px;
-    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -375,3 +495,103 @@ margin:auto;
 width:300px;
 height:250px;
 background-color:green;}
+
+/* Continutul blog.php */
+.postari {
+  width: 1002px;
+  height: 800px;
+  background-color:rgb(253, 253, 253);
+  margin-left: 333px;
+  margin-top:19px;
+  padding:2px;
+}
+.postareunu {
+width: auto;
+  height: auto;
+  background-color:pink;
+  padding:0px;
+  width:320px;
+  height:190px;
+  transition: all .2s ease-in-out;
+}
+.titlu h3 {
+position:absolute;
+  position: absolute;
+  margin-top: -96px;
+  margin-left: 51px;
+  color: #F9F9F9
+}
+.titlu h6 {
+   position: absolute;
+  margin-top: -73px;
+  margin-left: 66px;
+  color: #F9F9F9;
+  }
+  #autor {
+    color: orange;
+   font-size: 12px;
+  font-style: italic;
+   margin-left:178px;}
+.titlu h3:hover {
+text-decoration:underline;}
+#autor {
+color:white;
+font-size:12px;}
+.postareunu img {
+
+-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+ 
+}
+ 
+.postareunu img:hover {
+  -webkit-filter: blur(2px);
+}
+.postaretrei {
+	float:right;
+  margin-right: 40px;
+  margin-top: -380px;}
+.postaretrei img {
+-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+ 
+}
+ 
+.postaretrei img:hover {
+  -webkit-filter: blur(2px);}
+ .titluasalt h3 {
+ font-family:'Helvetica Neue',Helvetica,sans-serif;
+ position:absolute;
+   margin-top: -229px;
+  margin-left: 264px;
+  color: #F9F9F9
+  }
+  
+.titluasalt h6 {
+	font-family:'Helvetica Neue',Helvetica,sans-serif;
+	position: absolute;
+	margin-top: -204px;
+	margin-left: 248px;
+	color: #F9F9F9;
+  }
+ .titluasalt h3:hover {
+text-decoration:underline;}
+#autorasalt {
+	color:white;
+	font-size:12px;
+	font-style: italic;
+	margin-left:360px;}
+ .postarecinci {
+  width: auto;
+  height: auto;
+  float:right;
+  margin-top: -294px;
+  margin-right: 39px;
+  
+}

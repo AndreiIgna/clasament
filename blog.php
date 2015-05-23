@@ -52,9 +52,6 @@ $listaConcursuri = array();
 foreach ($results as $result) {
   $listaConcursuri[$result['categorie']][] = $result;
 }
-
-
-
 // query pentru rezultate
 $stmt = $db->prepare("SELECT sportiv.nume, sportiv.foto, clasament.echipa, sum(clasament.punctaj) as puncte, count(clasament.id_sportiv) as curse
                       FROM `clasament`, sportiv
@@ -103,10 +100,7 @@ $concursuri = explode(',', $filters['concursuri']);
 					</ul>
 					</div>
 			</div>
-			<div class="butoane">
-				<A class="masculin <?php if ($filters['sex'] == 'M') echo 'activ' ?>" href="<?php echo link_filtre(['sex' => 'M']) ?>">Masculin</A>
-				<a class="feminin <?php if ($filters['sex'] == 'F') echo 'activ' ?>" href="<?php echo link_filtre(['sex' => 'F']) ?>">Feminin</a>
-			</div>
+			
 		</header>
 	<div class="tipuri">
 		<div class="selecteaza">
@@ -130,7 +124,7 @@ $concursuri = explode(',', $filters['concursuri']);
           </li>
       <?php endforeach ?>
 
-				</ul>
+		</ul>
 		</div>
 		<div class="publicitate">
 			<div class="selecteazai">
@@ -144,46 +138,37 @@ $concursuri = explode(',', $filters['concursuri']);
 
 		</div>
 	</div>
-	<div class="right">
-		<h1> Top alergători general </h1>
-	</div>
-	<div class="topconcursuri" >
-			<div id="topaccordion">
-				<ul>
-
-          <?php $i = 0; foreach ($listaConcursuri as $categorie => $concursuri2) : ?>
-              <li>
-                <a href="#v<?php echo $i ?>"><?php echo $categorie ?></a>
-                  <div id="v<?php echo $i++ ?>" class="topaccordion">
-                      <table class="tg">
-                          <?php $j = 1; foreach (topClasament($categorie) as $rezultat) : ?>
-                              <tr>
-                                <th class="imagine">
-                                  <img src="<?php echo $rezultat['foto'] ?>" align="center" alt="<?php echo $rezultat['nume'] ?>" >
-                                </th>
-
-                                <th class="tg-qwzm"><?php echo $j++ ?>.</th>
-                                <th class="tg-qwzm"><?php echo $rezultat['nume'] ?></th>
-                                <th class="tg-qwzm"><?php echo $rezultat['echipa'] ?></th>
-                                <th class="tg-qwzm"><?php echo $rezultat['puncte'] ?>p</th>
-                              </tr>
-                          <?php endforeach ?>
-
-                        </table>
-                  </div>
-              </li>
-          <?php endforeach ?>
-
-				</ul>
+	<div class="postari">
+		<div class="postareunu">
+			<img src="parangu.jpg" width="320px" height="190px"/>
+		</div>
+		<div class="titlu">
+			<h3> Parangu Night Chalange </h3>
+			<h6>21 Ianuarie 2015 - de <h6 id="autor" color="white">Hajnal Robert </h6> </h6> 
+		</div>
+		<div class="postareunu">
+			<img src="parang2.jpg" width="320px" height="190px"/>
+		</div>
+		<div class="titlu">
+			<h3> Parangu Night Chalange </h3>
+			<h6>21 Ianuarie 2015 - de <h6 id="autor" color="white">Silviu Brucan </h6> </h6> 
+		</div>
+		<div class="postaretrei">
+			<img src="asault.jpg" width="640px" height="380px"/>
+		<div class="titluasalt">
+			<h3> Mountain Assault </h3>
+			<h6>21 Ianuarie 2015 - de <h6 id="autorasalt" color="white">Silviu Brucan </h6> </h6> 
+		</div>
+		</div>
+		<div class="postarepatru">
+			<img src="postavaru.jpg" width="420px" height="290px"/>
+		</div>
+		<div class="postarecinci">
+			<img src="alba.jpg" width="540px" height="290px"/>
 		</div>
 	</div>
-	<div class="main">
-
-			<?php include 'tabel-rezultate.php' ?>
-		<div class="comentarii">
-			<div align="center" class="fb-comments" data-href="http://clasament.roberthajnal.ro" data-numposts="10" data-colorscheme="light"></div>
-		</div>
-	</div>
+	
+	
 
 
   <script>
