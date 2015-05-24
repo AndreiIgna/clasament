@@ -117,7 +117,7 @@ $concursuri = explode(',', $filters['concursuri']);
     <header>
         <h1 class="titlu" align="center">Clasament alergători montani</h1>
 
-            <!--
+            
             <div class="menu" align="center">
               <div id='cssmenu'>
                 <ul>
@@ -126,7 +126,7 @@ $concursuri = explode(',', $filters['concursuri']);
                 </ul>
                 </div>
             </div>
-            -->
+           
 
             <?php if (isset($chooseSex)) : ?>
               <div class="butoane">
