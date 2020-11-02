@@ -100,7 +100,7 @@ $concursuri = explode(',', $filters['concursuri']);
     <link rel="stylesheet" href="styles.css">
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="script.js"></script>
-    <title>Clasament alergători montani</title>
+    <title>Alergători montani</title>
     <meta property="fb:admins" content="100001286327621"/>
      </head>
  <body>
@@ -117,7 +117,7 @@ $concursuri = explode(',', $filters['concursuri']);
     <header>
         <h1 class="titlu" align="center">Clasament alergători montani</h1>
 
-            <!--
+            
             <div class="menu" align="center">
               <div id='cssmenu'>
                 <ul>
@@ -126,7 +126,7 @@ $concursuri = explode(',', $filters['concursuri']);
                 </ul>
                 </div>
             </div>
-            -->
+           
 
             <?php if (isset($chooseSex)) : ?>
               <div class="butoane">

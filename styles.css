@@ -504,6 +504,7 @@ background-color:green;}
   clear: both;
   overflow: hidden;
   margin-left: 50px;
+  margin-top:-120px;
 }
 
 .article {
